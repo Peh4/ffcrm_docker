@@ -37,7 +37,7 @@ RUN chmod +x /entrypoint.sh
 
 USER ffcrm
 
-RUN git clone https://github.com/Peh4/fat_free_crm /home/ffcrm
+RUN git clone https://github.com/fatfreecrm/fat_free_crm /home/ffcrm
 
 WORKDIR /home/ffcrm
 
