@@ -1,0 +1,12 @@
+nginx:
+  image: nginx
+db:
+  image: postgre
+  ports: 
+   - "5432" 
+ffcrm:
+  build: ffrcm/
+  links:
+   - db
+  e:
+   - DB_PASSWORD
